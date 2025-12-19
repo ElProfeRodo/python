@@ -11,5 +11,9 @@ Aquí revisaremos cómo iterar mientras una condición sea verdadera.
     allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
   </iframe>
 </div>
+<br>
 
-[🔙 Volver al Inicio](./)
+```python
+print("hola")
+```
+<br> Volver al Inicio](./)
