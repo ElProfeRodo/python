@@ -29,8 +29,6 @@ while numero < 0:
 ```
 
 ```python
-numero = int(input("Numero: "))
-
 while True:
     numero = int(input("Numero: "))
     # Si el numer es positivo, salimos del while
