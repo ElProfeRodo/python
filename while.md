@@ -1,3 +1,9 @@
+---
+title: python
+---
+
+# 🐍 Python
+
 # Ciclo While
 
 Aquí revisaremos cómo iterar mientras una condición sea verdadera.
