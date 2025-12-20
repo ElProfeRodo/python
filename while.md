@@ -1,5 +1,5 @@
 ---
-title: 🐍 Python
+title: python
 ---
 
 # 🐍 Python
@@ -43,3 +43,8 @@ while True:
     else:
         print("El numero debe ser positivo")
 ```
+
+---
+<br>
+
+[⬅️ Volver](/python)
