@@ -2,8 +2,6 @@
 title: Fundamentos de Python
 ---
 
-# 🐍 Python
-
 ### Control de Flujo
 * [Ciclo While](/python/while)
 
