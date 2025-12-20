@@ -1,6 +1,8 @@
 ---
-title:
+title: python
 ---
+
+# Contenidos
 
 ### Control de Flujo
 * [Ciclo While](/python/while)
