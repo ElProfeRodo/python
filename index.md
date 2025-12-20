@@ -1,2 +1,9 @@
-- Control de Flujo
-  - [Ciclo While](./while)
+# 🐍 Python
+
+### Control de Flujo
+* [Ciclo While](/python/while)
+
+---
+<br>
+
+[⬅️ Volver al Sitio Principal](https://elproferodo.github.io)
