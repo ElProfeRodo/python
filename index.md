@@ -2,7 +2,7 @@
 title: python
 ---
 
-# Contenidos
+# 🐍 Python
 
 ### Control de Flujo
 * [Ciclo While](/python/while)
