@@ -1,5 +1,5 @@
 ---
-title: python
+title: 🐍 Python
 ---
 
 # 🐍 Python
