@@ -1,3 +1,7 @@
+---
+title: Fundamentos de Python
+---
+
 # 🐍 Python
 
 ### Control de Flujo
