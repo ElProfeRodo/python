@@ -47,7 +47,6 @@ while True:
 <details markdown="1">
 <summary>👁️ Ver Solución Propuesta</summary> 
 
-<br>
 ```python
 # Aquí va tu código Python
 contador = 0
