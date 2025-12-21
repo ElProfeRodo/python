@@ -53,7 +53,7 @@ while True:
   while contador < 5:
       print(contador)
       contador += 1
-Nota: Fíjate que inicializamos el contador en 0.
+  ```
 
 </details>
 ---
