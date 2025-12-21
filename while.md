@@ -44,19 +44,20 @@ while True:
         print("El numero debe ser positivo")
 ```
 
-<details>
-  <summary>👁️ Ver Solución Propuesta</summary>
-  
-  <br>
-  ```python
-  # Aquí va tu código Python
-  contador = 0
-  while contador < 5:
-      print(contador)
-      contador += 1
-  ```
+<details markdown="1">
+<summary>👁️ Ver Solución Propuesta</summary> 
+
+<br>
+```python
+# Aquí va tu código Python
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
+```
 
 </details>
+
 ---
 <br>
 
