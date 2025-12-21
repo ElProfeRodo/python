@@ -24,6 +24,8 @@ Aquí revisaremos cómo iterar mientras una condición sea verdadera.
 ### 1. Número positivo
 
 Solicitar un número desde el teclado y validar que sea positivo. En caso de no serlo, volver a pedir el número hasta que supere la validación
+<details markdown="1">
+<summary> Ver Solución Propuesta</summary>
 
 ```python
 numero = int(input("Numero: "))
@@ -42,17 +44,6 @@ while True:
         break
     else:
         print("El numero debe ser positivo")
-```
-
-<details markdown="1">
-<summary>👁️ Ver Solución Propuesta</summary> 
-
-```python
-# Aquí va tu código Python
-contador = 0
-while contador < 5:
-    print(contador)
-    contador += 1
 ```
 
 </details>
