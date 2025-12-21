@@ -2,6 +2,8 @@
 title: python
 ---
 
+<link rel="stylesheet" href="/python/assets/css/style.css">
+
 # 🐍 Python
 
 # Ciclo While
