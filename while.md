@@ -47,7 +47,8 @@ while True:
 <details>
   <summary>👁️ Ver Solución Propuesta</summary>
   
-  <br> ```python
+  <br>
+  ```python
   # Aquí va tu código Python
   contador = 0
   while contador < 5:
