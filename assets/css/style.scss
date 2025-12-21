@@ -1,0 +1,47 @@
+---
+---
+
+/* Estilos SINTAXIS PYTHON (VS CODE LIGHT) */
+/* Solo afectará a los bloques de código, no al resto de tu web */
+
+/* Bloque General */
+pre, code {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.95em;
+    border: 1px solid #e1e4e8;
+    border-radius: 4px;
+}
+
+/* Palabras clave (while, if, def) -> Morado */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt {
+    color: #af00db;
+    font-weight: bold;
+}
+
+/* Strings ("Texto") -> Rojo */
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+    color: #a31515;
+}
+
+/* Funciones (print, input) -> Ocre */
+.highlight .nf, .highlight .nb, .highlight .bp {
+    color: #795e26;
+}
+
+/* Comentarios (# ...) -> Verde */
+.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs {
+    color: #008000;
+    font-style: italic;
+}
+
+/* Números -> Verde oscuro */
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
+    color: #098658;
+}
+
+/* Variables -> Azul */
+.highlight .n, .highlight .v, .highlight .vf, .highlight .vm, .highlight .nv {
+    color: #001080;
+}
