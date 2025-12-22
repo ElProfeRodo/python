@@ -2,11 +2,9 @@
 title: python
 ---
 
-<link rel="stylesheet" href="/python/assets/css/style.css">
-
 # 🐍 Python
 
-# Ciclo While
+## Ciclo While
 
 Aquí revisaremos cómo iterar mientras una condición sea verdadera.
 
