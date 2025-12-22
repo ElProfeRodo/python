@@ -19,9 +19,9 @@ Aquí revisaremos cómo iterar mientras una condición sea verdadera.
 </div>
 <br>
 
-## Ejercicios
+### Ejercicios
 
-### 1. Número positivo
+#### 1. Número positivo
 
 Solicitar un número desde el teclado y validar que sea positivo. En caso de no serlo, volver a pedir el número hasta que supere la validación
 <details markdown="1">
