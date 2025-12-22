@@ -1,130 +1,43 @@
----
----
-
 /* ==========================================================================
-   1. ESTILO GITHUB STANDARD ("El del Home")
+   3. COLORES EXACTOS VS CODE (MODO CLARO / MODERN)
    ========================================================================== */
 
-body {
-    /* La fuente exacta que usa GitHub */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-    font-size: 16px;
-    line-height: 1.5;
-    word-wrap: break-word;
-    
-    /* Colores base */
-    color: #24292f;        /* Negro suave de GitHub */
-    background-color: #ffffff;
-    
-    /* Maquetación centrada (Estilo README) */
-    max-width: 1012px;     /* El ancho estándar de los repositorios */
-    margin: 0 auto;        /* Centrado */
-    padding: 32px;         /* Aire alrededor */
-}
-
-/* Títulos con la línea gris debajo (Clásico de GitHub) */
-h1 {
-    font-size: 2em;
-    border-bottom: 1px solid #d0d7de;
-    padding-bottom: 0.3em;
-    margin-bottom: 16px;
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 1.5em;
-    border-bottom: 1px solid #d0d7de;
-    padding-bottom: 0.3em;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-weight: 600;
-}
-
-/* Enlaces (Azul GitHub) */
-a {
-    color: #0969da;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* Listas */
-ul, ol {
-    padding-left: 2em;
-}
-
-
-/* ==========================================================================
-   2. BLOQUES DE CÓDIGO (Contenedor GitHub + Colores VS Code)
-   ========================================================================== */
-
-/* La "Caja" del código */
-pre {
-    background-color: #ffffff; /* Fondo blanco (VS Code) */
-    border: 1px solid #d0d7de; /* Borde gris sutil (GitHub) */
-    border-radius: 6px;        /* Bordes redondeados */
-    padding: 16px;
-    overflow: auto;
-    font-size: 85%;
-    line-height: 1.45;
-    margin-bottom: 16px;
-}
-
-/* El texto dentro (Reset para evitar bordes dobles) */
-pre code {
-    background-color: transparent !important;
-    border: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-    white-space: pre; /* Mantiene el formato */
-}
-
-/* Código pequeño en medio del texto (inline) */
-:not(pre) > code {
-    padding: 0.2em 0.4em;
-    margin: 0;
-    font-size: 85%;
-    white-space: break-spaces;
-    background-color: #afb8c133; /* Gris claro de GitHub */
-    border-radius: 6px;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-}
-
-
-/* ==========================================================================
-   3. COLORES EXACTOS VS CODE (MODO CLARO / AZUL)
-   ========================================================================== */
-
-/* PALABRAS CLAVE (if, while, def, class, return) -> AZUL PURO */
+/* A) PALABRAS CLAVE (La estructura del lenguaje) -> AZUL PURO
+   Ejemplos: if, while, for, def, class, return, import */
 .highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .ow {
     color: #0000FF !important;
     font-weight: bold;
 }
 
-/* STRINGS ("Texto") -> ROJO LADRILLO */
+/* B) FUNCIONES Y BUILT-INS (Acciones) -> OCRE / DORADO
+   Ejemplos: print(), input(), int(), range(), len(), mi_funcion()
+   ¡Esto es lo que estaba fallando! Ahora forzamos el color Ocre. */
+.highlight .nf, .highlight .nb, .highlight .bp, .highlight .builtin {
+    color: #795e26 !important;
+    font-weight: normal; /* Las funciones no suelen ir en negrita en VS Code */
+}
+
+/* C) VARIABLES (Datos) -> AZUL OSCURO
+   Ejemplos: numero, contador, resultado */
+.highlight .n, .highlight .v, .highlight .vf, .highlight .vm, .highlight .nv {
+    color: #001080 !important;
+}
+
+/* D) STRINGS (Texto) -> ROJO LADRILLO
+   Ejemplos: "Hola Mundo" */
 .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
     color: #a31515 !important;
 }
 
-/* FUNCIONES (print, input, range) -> OCRE / DORADO */
-.highlight .nf, .highlight .nb, .highlight .bp {
-    color: #795e26 !important;
-}
-
-/* COMENTARIOS (# ...) -> VERDE */
+/* E) COMENTARIOS -> VERDE
+   Ejemplos: # Esto es un comentario */
 .highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs {
     color: #008000 !important;
     font-style: italic;
 }
 
-/* NÚMEROS -> VERDE OSCURO */
+/* F) NÚMEROS -> VERDE OSCURO MENTOLADO
+   Ejemplos: 0, 10, 3.14 */
 .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
     color: #098658 !important;
-}
-
-/* VARIABLES -> AZUL OSCURO */
-.highlight .n, .highlight .v, .highlight .vf, .highlight .vm, .highlight .nv {
-    color: #001080 !important;
 }
