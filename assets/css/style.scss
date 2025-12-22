@@ -1,69 +1,130 @@
 ---
 ---
 
-/* =========================================
-   1. ESTILOS GENERALES (Cuerpo y Texto)
-   ========================================= */
+/* ==========================================================================
+   1. ESTILO GITHUB STANDARD ("El del Home")
+   ========================================================================== */
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 40px;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    /* La fuente exacta que usa GitHub */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    
+    /* Colores base */
+    color: #24292f;        /* Negro suave de GitHub */
+    background-color: #ffffff;
+    
+    /* Maquetación centrada (Estilo README) */
+    max-width: 1012px;     /* El ancho estándar de los repositorios */
+    margin: 0 auto;        /* Centrado */
+    padding: 32px;         /* Aire alrededor */
 }
 
-h1, h2, h3 { color: #24292e; margin-top: 1.5em; }
-a { color: #0366d6; text-decoration: none; }
-a:hover { text-decoration: underline; }
-img { max-width: 100%; border-radius: 6px; }
+/* Títulos con la línea gris debajo (Clásico de GitHub) */
+h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 0.3em;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
 
-/* =========================================
-   2. ARREGLO DE LOS BLOQUES DE CÓDIGO
-   ========================================= */
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 0.3em;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
 
-/* A) El contenedor GRANDE (La caja principal) */
+/* Enlaces (Azul GitHub) */
+a {
+    color: #0969da;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 2em;
+}
+
+
+/* ==========================================================================
+   2. BLOQUES DE CÓDIGO (Contenedor GitHub + Colores VS Code)
+   ========================================================================== */
+
+/* La "Caja" del código */
 pre {
-    background-color: #ffffff; /* Fondo blanco */
-    border: 1px solid #e1e4e8; /* Borde gris externo */
-    border-radius: 6px;
-    padding: 16px;             /* Espacio interno */
-    overflow: auto;            /* Scroll si es muy ancho */
-    margin-bottom: 1.5em;
+    background-color: #ffffff; /* Fondo blanco (VS Code) */
+    border: 1px solid #d0d7de; /* Borde gris sutil (GitHub) */
+    border-radius: 6px;        /* Bordes redondeados */
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    margin-bottom: 16px;
 }
 
-/* B) El TEXTO dentro del bloque (¡Aquí estaba el error!) */
-/* Le quitamos el borde y el fondo para que no se vea doble */
+/* El texto dentro (Reset para evitar bordes dobles) */
 pre code {
     background-color: transparent !important;
-    border: none !important;
+    border: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
-    font-family: Consolas, "Courier New", monospace;
-    font-size: 0.95em;
-    color: #000000;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    white-space: pre; /* Mantiene el formato */
 }
 
-/* C) Código "suelto" en medio de un párrafo (como `print()`) */
-/* Este sí lleva una cajita pequeña */
+/* Código pequeño en medio del texto (inline) */
 :not(pre) > code {
-    background-color: #f6f8fa;
-    border: 1px solid #eaecef;
-    border-radius: 3px;
-    padding: 2px 4px;
-    font-family: Consolas, "Courier New", monospace;
-    font-size: 0.9em;
-    color: #24292e;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: #afb8c133; /* Gris claro de GitHub */
+    border-radius: 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
 
-/* =========================================
-   3. COLORES DE SINTAXIS (VS Code Light)
-   ========================================= */
 
-.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #af00db; font-weight: bold; } /* Keywords */
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: #a31515; } /* Strings */
-.highlight .nf, .highlight .nb, .highlight .bp { color: #795e26; } /* Functions */
-.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs { color: #008000; font-style: italic; } /* Comments */
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #098658; } /* Numbers */
-.highlight .n, .highlight .v, .highlight .vf, .highlight .vm, .highlight .nv { color: #001080; } /* Variables */
+/* ==========================================================================
+   3. COLORES EXACTOS VS CODE (MODO CLARO / AZUL)
+   ========================================================================== */
+
+/* PALABRAS CLAVE (if, while, def, class, return) -> AZUL PURO */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .ow {
+    color: #0000FF !important;
+    font-weight: bold;
+}
+
+/* STRINGS ("Texto") -> ROJO LADRILLO */
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss {
+    color: #a31515 !important;
+}
+
+/* FUNCIONES (print, input, range) -> OCRE / DORADO */
+.highlight .nf, .highlight .nb, .highlight .bp {
+    color: #795e26 !important;
+}
+
+/* COMENTARIOS (# ...) -> VERDE */
+.highlight .c, .highlight .cm, .highlight .cp, .highlight .c1, .highlight .cs {
+    color: #008000 !important;
+    font-style: italic;
+}
+
+/* NÚMEROS -> VERDE OSCURO */
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il {
+    color: #098658 !important;
+}
+
+/* VARIABLES -> AZUL OSCURO */
+.highlight .n, .highlight .v, .highlight .vf, .highlight .vm, .highlight .nv {
+    color: #001080 !important;
+}
