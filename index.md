@@ -10,7 +10,7 @@ title: python
 ---
 <br>
 
-[⬅️ Volver al Sitio Principal](https://elproferodo.github.io)
+[⬅️ Volver al Sitio Principal](/)
 
 <br>
 <br>
