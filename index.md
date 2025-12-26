@@ -15,28 +15,6 @@ title: python
 <br>
 <br>
 
-<p id="email-container">
-    📧 <a id="email-link" href="#" style="text-decoration: none; color: inherit;">
-        [Cargando contacto...]
-    </a>
-</p>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Definimos las partes por separado para despistar al robot
-        const usuario = "contacto"; 
-        const dominio = "elproferodo.cl";
-        const emailCompleto = usuario + "@" + dominio;
-        
-        // Buscamos el elemento
-        const link = document.getElementById("email-link");
-        
-        // Inyectamos el correo real
-        link.href = "mailto:" + emailCompleto;
-        link.innerText = emailCompleto;
-    });
-</script>
-
 <div align="center">
   <small>
     © 2025 Rodolfo Fernández-Santibáñez. <br>
